@@ -1,17 +1,18 @@
-# code-quiz
+## Javascript Code-Quiz 
 
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+# Project Description
+In this project, we practiced creating an online quiz to put in to practice our HTML, CSS, and Javascript knowledge. Similar projects may be made in the future, both to practice the basics and also to improve on them. I could not get the timer to function, but I will improve it in the future.
 
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+# Screenshot and Link
+
+# Installation
+N/A
+
+# Usage
+N/A
+
+# Credits
+N/A
+
+# License
+Refer to repo
