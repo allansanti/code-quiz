@@ -1,19 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Quiz by allansanti</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <h1>It's Go Time!</h1>
-            <a href="/game.html" class="btn">Play</a>
-            <a href="/highscores.html" id="highscore-btn" class="btn">High Scores<i class="fas fa-crown"></i></a>
-        </div>
-    </div>
+    <header>
+        <h3>View Highscores</h3>
+        <p>Time: <label for="" id="timer">0</label></p>
+    </header>
+
+    <main>
+        <section id="intro-section"></section>
+        <h1>Coding Quiz Challenge</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam repellat iure ipsa voluptates hic excepturi,
+            nobis rerum sint numquam adipisci reprehenderit tempora, quod eligendi asperiores at! Fugiat quaerat
+            accusantium et.</p>
+        <button id="start-btn">Start Quiz</button>
+        <section id="question-section">
+            <h2 id="title">Question 1</h2>
+            <ul>
+                <li><button class="choices">Choice 1</button></li>
+                <li><button class="choices">Choice 2</button></li>
+                <li><button class="choices">Choice 3</button></li>
+                <li><button class="choices">Choice 4</button></li>
+            </ul>
+
+        </section>
+        
+        <section id="initial-section">
+            <h3>All Done!</h3>
+            <p>Your Final Score is <label for="" id="score">80</label></p>
+
+            Enter Initials: <input type="text" id="initial-input">
+            <button id="save-btn">Save</button>
+        </section>
+        <section id="highscore-section">
+            <h3>High Scores</h3>
+            <ol>
+                <li>R2-D2</li>
+            </ol>
+            <button id="go-back-btn">Go Back</button>
+            <button id="clear-btn">Clear Scores</button>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
