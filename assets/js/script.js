@@ -1,8 +1,10 @@
-var startBtn= document.getElementById ("start-btn")
+var startBtn= document.getElementById("start-btn")
 var introSectionEl= document.getElementById("intro-section")
-var timerEl= document.getElementById("timer")
-var questions= document.getElementById("question-section")
-var timeEl= document.getElementById('title')
+var timerEl= document.getElementById('timer')
+var questionSectionEl= document.getElementById("question-section")
+var titleEl= document.getElementById('title')
+var choicesEl= document.querySelectorAll(".choices")
+var questionIndex= 0
 
 var questionsArray= [
     {
@@ -31,9 +33,41 @@ var questionsArray= [
         answer: "c1"
     }
 ]
+var timeLeft= questionsArray.length*15
+
+setIntervalId=0;
 
 function startQuiz(){
-introSectionEl.classList.add("hide")
+    introSectionEl.setAttribute("class", "hide")
+    questionSectionEl.setAttribute("class", "")
+    setIntervalId= setInterval(countDown, 1000)
+    showQuestions()
+}
+
+function countDown(){
+    timerEl.textContent= timeLeft--
+        if(timeLeft===0){
+            clearInterval(setIntervalId)
+        }
+}
+
+function showQuestions(){
+    titleEl.textContent=questionsArray[questionIndex].title
+
+    choicesEl[0].textContent=questionsArray[questionIndex].choices[0]
+    choicesEl[1].textContent=questionsArray[questionIndex].choices[1]
+    choicesEl[2].textContent=questionsArray[questionIndex].choices[2]
+    choicesEl[3].textContent=questionsArray[questionIndex].choices[3]
+}
+
+function nextQuestion(event){
+    var currentElement= event.target
+    if(currentElement.matches("button")){
+        questionIndex++
+        showQuestions()
+    }
 }
 
 startBtn.addEventListener("click", startQuiz)
+
+questionSectionEl.addEventListener("click", nextQuestion)
