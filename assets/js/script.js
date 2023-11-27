@@ -8,29 +8,29 @@ var questionIndex= 0
 
 var questionsArray= [
     {
-        title: "q 1",
-        choices: ["c1","c2", "c3", "c4"],
-        answer: "c2"
+        title: "What does HTML stand for?",
+        choices: ["HyperText Maxing Language","HyperText Markup Language", "HyperText Masking Language", "HyperText Marking Language"],
+        answer: "HyperText Markup Language"
     },
     {
-        title: "q 2",
-        choices: ["c1","c2", "c3", "c4"],
-        answer: "c1"
+        title: "What is CSS?",
+        choices: ["Cascading Style Sheets","Cascading Storing Sheets", "Cascading Super Saiyan", "Costco Style Sheets"],
+        answer: "Cascading Style Sheets"
     },
     {
-        title: "q 3",
-        choices: ["c1","c2", "c3", "c4"],
-        answer: "c3"
+        title: "Who is the best Coding Instructor?",
+        choices: ["Santa","Elon Musk", "Phillip Loy", "Internet"],
+        answer: "Phillip Loy"
     },
     {
-        title: "q 4",
-        choices: ["c1","c2", "c3", "c4"],
-        answer: "c4"
+        title: "What is the most important heading element? ",
+        choices: ["h2","h6", "p1", "h1"],
+        answer: "h1"
     },
     {
-        title: "q 5",
-        choices: ["c1","c2", "c3", "c4"],
-        answer: "c1"
+        title: "What tag should be at the end of your javascript?",
+        choices: ["</script>","</body>", "<header>", "<var>"],
+        answer: "</script>"
     }
 ]
 var timeLeft= questionsArray.length*15
